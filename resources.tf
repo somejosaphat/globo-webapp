@@ -56,7 +56,6 @@ resource "aws_instance" "main" {
   })
 }
 
-
 resource "aws_lb" "main" {
   name               = "${local.name_prefix}-webapp"
   internal           = false
