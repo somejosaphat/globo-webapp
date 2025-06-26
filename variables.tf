@@ -37,6 +37,16 @@ variable "api_key" {
   description = "(Required) API key for web app to talk to SaaS platform."
 }
 
+variable "ec2_role_name" {
+  type        = string
+  description = "(Required) Role name for EC2 instance"
+}
+
+variable "api_key_secret_id" {
+  type        = string
+  description = "(Required) Secret ID for API key for web app to talk to SaaS platform."
+}
+
 variable "tfe_organization" {
   type        = string
   description = "(Required) Name of TFC organization"
