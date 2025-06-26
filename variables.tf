@@ -32,9 +32,14 @@ variable "instance_type" {
   default     = "t3.micro"
 }
 
-variable "api_key" {
+variable "ec2_role_name" {
   type        = string
-  description = "(Required) API key for web app to talk to SaaS platform."
+  description = "(Required) Role name for EC2 instance"
+}
+
+variable "api_key_secret_id" {
+  type        = string
+  description = "(Required) Secret ID for API key for web app to talk to SaaS platform."
 }
 
 variable "tfe_organization" {
